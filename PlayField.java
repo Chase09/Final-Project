@@ -22,9 +22,12 @@ public class PlayField extends World
     private boolean nameSelected;
     private Mario player = null;
     private Donkey_Kong dk = null;
+    private Barrels barrel = null;
+    private DonkeyKongPrincess princess = null;
     private HighScorePic highScore = null;
+    private PrincessHelp helpSign = null;
     private OilBucket bucket = null;
-    private long score = 10;
+    private long score = 2000000;
     private long highScoreNum= 0;
     private String playerName = "";
     int p ;
@@ -40,12 +43,21 @@ public class PlayField extends World
         initializePlayingField(); 
         
         nameSelected = true;
-        player = new Mario();
         
+        player = new Mario();
         addObject(player, 90, 570);
         
         dk = new Donkey_Kong();
         addObject(dk ,100, 170);
+        
+        barrel = new Barrels();
+        addObject(barrel ,37, 169);
+        
+        princess = new DonkeyKongPrincess();
+        addObject(princess ,209, 119);
+        
+        helpSign = new PrincessHelp();
+        addObject(helpSign, 276, 102);
         
         highScore = new HighScorePic();
         addObject(highScore, 225, 15);
@@ -145,6 +157,13 @@ public class PlayField extends World
         addObject(new MetalBar(), 255, 149);
         addObject(new MetalBar(), 225, 149);
         addObject(new MetalBar(), 195, 149);
+        //The Boxes that cause the barrels to rotate the other way
+        addObject(new TurnBox(),434,226);
+        addObject(new TurnBox2(),17,299);
+        addObject(new TurnBox3(),435,380);
+        addObject(new TurnBox4(),17,460);
+        addObject(new TurnBox5(),434,534);
+        addObject(new StopBox(),100,587);
         addLadder();
         getData();
         saveData();
@@ -220,6 +239,14 @@ public class PlayField extends World
     {
         addObject(new BarrelsSpinning(),144,190);
     }
+    public void addBarrelOnGround()
+    {
+        addObject(new BarrelsSpinning(),100,576);
+    }
+    public void addBarrelsDown()
+    {
+        addObject(new BarrelDown(), 100, 190);
+    }  
     /**
      * Prepare the world for the start of the program.
      * That is: create the initial objects and add them to the world.

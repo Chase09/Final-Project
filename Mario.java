@@ -62,10 +62,10 @@ public class Mario extends Actor
         {
             if(Greenfoot.isKeyDown("up"))
             {
-                vSpeed = 2;
+                vSpeed = 6;
                 jumpStrenght = 0 ;
                 upLadder();
-                animateDeathCounter = 17;
+                animateDeathCounter = 13;
             }
         } 
         checkKeys();   
@@ -232,19 +232,18 @@ public class Mario extends Actor
         if(onGround())
         {
             vSpeed = 0;
-            jumpStrenght = 6 ;  
+            jumpStrenght = 7;  
             moveRight();
             moveLeft(); 
         }
-        else
+        else if(!isTouching(Ladder.class))
         {
            fall(0);
         }
     }
     private void upLadder()
     { 
-        vSpeed = -5;
-        setLocation(getX(), getY()+vSpeed);
+        setLocation(getX(), getY()-vSpeed);
         if(frame == 1)
         {
             setImage(upLadder [0]);
@@ -278,6 +277,8 @@ public class Mario extends Actor
         else if(frame == 7)
         {
             setImage(upLadder [6]);
+            vSpeed = -jumpStrenght;
+            fall(0);
             frame++;
         }
         else
@@ -292,9 +293,9 @@ public class Mario extends Actor
             setLocation(getX(), getY()+speed);
         }
     } 
-    private void fall(int xSpeed)
+    private void fall(int ySpeed)
     {
-        setLocation(getX()+xSpeed, getY() + vSpeed);
+        setLocation(getX()+ySpeed, getY() + vSpeed);
         vSpeed+= 1;
     }
     private boolean onGround()

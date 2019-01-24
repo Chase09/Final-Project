@@ -1,22 +1,20 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class WalkingStand here.
+ * Write a description of class PrincessHelp here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class DonkeyKongPrincess extends Actor
+public class PrincessHelp extends Actor
 {
     private int frame = 1;
     private int animateCounter = 0;
     private GreenfootImage frames[] = new GreenfootImage[2];
-    public DonkeyKongPrincess()
+    public PrincessHelp()
     {
-        frames [0] = new GreenfootImage("PrincessFrame1.png");
-        frames [1] = new GreenfootImage("PrincessFrame2.png");
-        GreenfootImage image = getImage();
-        setImage(image);
+        frames [0] = new GreenfootImage("PrincessHelp1.png");
+        frames [1] = new GreenfootImage("PrincessHelp2.png");
     }
     /**
      * Act - do whatever the OilBucket wants to do. This method is called whenever
@@ -24,7 +22,6 @@ public class DonkeyKongPrincess extends Actor
      */
     public void act() 
     {
-        // Add your action code here.
         if(animateCounter > 0)
         { 
             animateCounter -=1;

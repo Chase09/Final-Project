@@ -8,6 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class BarrelsSpinning extends Actor
 {
+    private int rightOrLeft = 0;
     private int speed = 1;
     private int frame = 1;
     private int animateCounter = 0;
@@ -36,9 +37,8 @@ public class BarrelsSpinning extends Actor
             animate();
             animateCounter = 8  ;
         } 
-        moveRight();
+        checkFall();
     }    
-    
     public void animate()
     {
         if(frame == 1)
@@ -64,5 +64,50 @@ public class BarrelsSpinning extends Actor
     private void moveRight()
     {
         setLocation(getX()+speed, getY());
+    }
+    public void checkFall()
+    {
+        if(isTouching(MetalBar.class))
+        {
+            fall(0);
+            moveRight();
+            if(isAtEdge())
+            {
+                getWorld().removeObject(this);
+            }
+        }
+        else
+        {
+           fall(3);
+           rightOrLeft();
+        }
+    }
+    private void fall(int ySpeed)
+    {
+        setLocation(getX(), getY() + ySpeed);
+        ySpeed++;
+    }
+    private void rightOrLeft()
+     {
+        if(isTouching(TurnBox.class))
+        {
+            speed = -1;
+        }
+        else if(isTouching(TurnBox2.class))
+        {
+            speed = 1;
+        }
+        else if(isTouching(TurnBox3.class))
+        {
+            speed = -1;
+        }
+        else if(isTouching(TurnBox4.class))
+        {
+            speed = 1;
+        }
+        else if(isTouching(TurnBox5.class))
+        {
+            speed = -1;
+        }
     }
 }

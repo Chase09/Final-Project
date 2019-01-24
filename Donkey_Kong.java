@@ -38,20 +38,17 @@ public class Donkey_Kong extends Actor
             if(Greenfoot.getRandomNumber(2) == 0)
             {
                 animate1();
-                animateCounter = 60;
+                animateCounter = 35;
             }
             else if(Greenfoot.getRandomNumber(2) == 1)
             {
                 animate2();
-                animateCounter = 60;
+                animateCounter = 35 ;
             }
-            else if( Greenfoot. getRandomNumber(100) < 75)
+            else if( Greenfoot. getRandomNumber(100) < 50)
             {
-                if(Greenfoot.getRandomNumber(2) < 1)
-                {
-                    animate3();
-                    animateCounter = 80;
-                }
+                animate3();
+                animateCounter = 60;
             } 
         }    
     }
@@ -75,7 +72,7 @@ public class Donkey_Kong extends Actor
         else if(frame == 4)
         {
             setImage(frames [3]);
-                addBarrels();
+            addBarrels();
             frame = 1;
         }
     }
@@ -107,11 +104,16 @@ public class Donkey_Kong extends Actor
         if(frame == 1)
         {
             setImage(frames [5]);
+            addBarrelDown();
             frame = 1;
         }   
     }
     private void addBarrels()
     {
         ((PlayField) getWorld()).addBarrel();
+    }
+    private void addBarrelDown()
+    {
+        ((PlayField) getWorld()).addBarrelsDown();
     }
 }
