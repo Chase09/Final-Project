@@ -1,11 +1,12 @@
 #BlueJ class context
 comment0.target=PrincessHelp
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ PrincessHelp\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
 comment1.params=
 comment1.target=PrincessHelp()
+comment1.text=\r\n\ This\ constructor\ sets\ the\ frame\ of\ the\ PrincessHelp\ array\ to\ \r\n\ one\ of\ the\ existing\ pictures.\ Either\ PrincessHelp1,\ or\ PrincessHelp2.\r\n\ This\ helps\ to\ create\ the\ feeling\ of\ needing\ help.\r\n\ \r\n\ @param\ There\ are\ no\ parameters\r\n\ @return\ Nothing\ is\ returned\r\n
 comment2.params=
 comment2.target=void\ act()
-comment2.text=\r\n\ Act\ -\ do\ whatever\ the\ OilBucket\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+comment2.text=\r\n\ Act\ -\ is\ responsible\ with\ the\ delay\ that\ the\ two\ pictures\ go\ off\ at.\r\n\ When\ animateCounter\ is\ zero\ the\ animate\ method\ is\ initilized.\ This\ method\ \r\n\ is\ called\ whenever\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n\ \r\n\ @param\ There\ are\ no\ parameters\r\n\ @return\ Nothing\ is\ returned\r\n
 comment3.params=
 comment3.target=void\ animate()
+comment3.text=\r\n\ Animate\ -\ is\ the\ method\ that\ alternates\ frames\ from\ frame\ 1\ to\ frame\ 2.\ This\ helps\r\n\ to\ add\ a\ animation\ effect\ to\ the\ game.\ When\ animateCounter\ is\ zero\ this\ method\ is\ initilized.\r\n\ This\ method\ is\ called\ whenever\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n\ \r\n\ @param\ There\ are\ no\ parameters\r\n\ @return\ Nothing\ is\ returned\r\n
 numComments=4

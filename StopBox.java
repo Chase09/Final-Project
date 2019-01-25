@@ -1,24 +1,17 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
-/**
- * Write a description of class TurnBox here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
 public class StopBox extends Actor
 {
+    /**
+     * This is the constructor that sets the image of the StopBox to a black box that 
+     * causes the BarrelsSpinningDown to stop rotate to the left of the screen when later it is removed.
+     * 
+     * @param There are no parameters
+     * @return Nothing is returned
+     */
     public StopBox()
     {
-        GreenfootImage image = new GreenfootImage("TurnBox1.png");
+        GreenfootImage image = new GreenfootImage("TurnBox.png");
         setImage(image);
-    }
-    /**
-     * Act - do whatever the TurnBox wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
-    public void act() 
-    {
-        // Add your action code here.
-    }    
+    } 
 }

@@ -1,15 +1,18 @@
 #BlueJ class context
 comment0.target=BarrelDown
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ BarrelDown\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
 comment1.params=
 comment1.target=BarrelDown()
+comment1.text=\r\n\ This\ constructor\ sets\ the\ picture\ of\ the\ BarrelDown\ class\ to\ a\ existing\ picture.\r\n\ This\ is\ what\ donkey\ kong\ spawns\ after\ doing\ his\ iconic\ move"the\ drop."\ The\ barrel\r\n\ than\ moves\ down\ to\ ground\ level\ and\ is\ later\ removed\ from\ the\ game.\r\n\ \r\n\ @param\ There\ are\ no\ parameters\r\n\ @return\ Nothing\ is\ returned\r\n
 comment2.params=
 comment2.target=void\ act()
-comment2.text=\r\n\ Act\ -\ do\ whatever\ the\ OilBucket\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+comment2.text=\r\n\ Act\ -\ is\ responsible\ with\ adding\ the\ barrel\ that\ moves\ down\ after\ Donkey\ Kong\r\n\ has\ chose\ to\ initilized\ it\ and\ to\ check\ to\ see\ if\ the\ barrel\ is\ falling.\r\n\ This\ method\ is\ called\ whenever\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n\ \r\n\ @param\ There\ are\ no\ parameters\r\n\ @return\ Nothing\ is\ returned\r\n
 comment3.params=
 comment3.target=void\ fall()
+comment3.text=\r\n\ fall\ -\ sets\ the\ location\ of\ the\ BarrelDown\ object\ to\ a\ (y)\ loation\ of\r\n\ vSpeed\ (vertical\ speed)\ which\ is\ set\ to\ 2.\ This\ method\ is\ used\ whenever\r\n\ the\ object\ has\ to\ fall.\r\n\ \r\n\ @param\ There\ are\ no\ parameters\r\n\ @return\ Nothing\ is\ returned\r\n
 comment4.params=
 comment4.target=void\ checkFall()
+comment4.text=\r\n\ checkFall\ -\ checks\ to\ see\ if\ the\ object\ is\ intersecting\ with\ the\r\n\ metalBar\ class.\ If\ so,\ the\ obejct\ starts\ to\ move\ down\ using\ the\r\n\ fall\ method.\ There\ is\ a\ StopBox\ object\ placed\ on\ floor\ ground\r\n\ that\ when\ the\ BarrelDown\ object\ comes\ in\ conatact\ with\ it\ removes\ it.\r\n\ \r\n\ @param\ There\ are\ no\ parameters\r\n\ @return\ Nothing\ is\ returned\r\n
 comment5.params=
 comment5.target=void\ addBarrels()
+comment5.text=\r\n\ addBarrels\ -\ adds\ the\ BarrelsSpinning\ object\ when\ the\ BarrelDown\r\n\ object\ comes\ in\ contact\ with\ the\ invisible\ StopBox\ object.\r\n\ \r\n\ @param\ There\ are\ no\ parameters\r\n\ @return\ Nothing\ is\ returned\r\n
 numComments=6

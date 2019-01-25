@@ -1,25 +1,19 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
-/**
- * Write a description of class HighScorePic here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
 public class HighScorePic extends Actor
 {
+    /**
+     * This constructor sets the picture of the HighScorePic class to 
+     * the original donkey kong 8 bit highscore logo. This is used to show the
+     * current highScore. 
+     * 
+     * @param There are no parameters
+     * @return Nothing is returned
+     */
     public HighScorePic()
     {
         GreenfootImage image = getImage();
         image.scale(200, 23);
         setImage(image);
-    }
-    /**
-     * Act - do whatever the HighScorePic wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
-    public void act() 
-    {
-        
-    }           
+    }         
 }

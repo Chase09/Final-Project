@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Scoreboard
+comment0.text=\r\n\ The\ scoreboard\ class\ is\ responsible\ for\ counting\ and\ adding\ the\r\n\ score\ that\ you\ get\ by\ collecting\ avoiding\ barrels\ and\ jumping\ as\ Mario.\ The\ maximum\ \r\n\ amount\ of\ points\ that\ you\ can\ gather\ is\ 1\ Billion.\ The\ scoreboard\ is\ located\r\n\ on\ the\ top\ left\ of\ the\ screen.\r\n\ \r\n\ @author\ Hirad\ Abbasi\ \r\n\ @version\ Thursday,\ January\ 24,\ 2019\r\n
+comment1.params=
+comment1.target=Scoreboard()
+comment2.params=
+comment2.target=void\ addToScore()
+comment2.text=\r\n\ AddToScore\ will\ make\ sure\ to\ show,\ count\ and\ display\ the\ score\ on\ the\ top\ \r\n\ left\ of\ the\ screen.\ Each\ time\ you\ recive\ score,\ the\ existing\ score\ is\r\n\ \ removed\ from\ the\ screen\ and\ it\ is\ updated\ with\ the\ new\ score.\r\n\ \r\n\ @param\ None\ There\ are\ no\ parameters\r\n\ @return\ Nothing\ is\ returnted\r\n
+numComments=3

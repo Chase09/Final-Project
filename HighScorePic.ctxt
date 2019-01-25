@@ -1,9 +1,6 @@
 #BlueJ class context
 comment0.target=HighScorePic
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ HighScorePic\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
 comment1.params=
 comment1.target=HighScorePic()
-comment2.params=
-comment2.target=void\ act()
-comment2.text=\r\n\ Act\ -\ do\ whatever\ the\ HighScorePic\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
-numComments=3
+comment1.text=\r\n\ This\ constructor\ sets\ the\ picture\ of\ the\ HighScorePic\ class\ to\ \r\n\ the\ original\ donkey\ kong\ 8\ bit\ highscore\ logo.\ This\ is\ used\ to\ show\ the\r\n\ current\ highScore.\ \r\n\ \r\n\ @param\ There\ are\ no\ parameters\r\n\ @return\ Nothing\ is\ returned\r\n
+numComments=2

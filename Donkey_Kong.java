@@ -1,16 +1,20 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
-/**
- * Write a description of class Donkey_Kong here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
 public class Donkey_Kong extends Actor
 {
     private int frame = 1;
     private int animateCounter = 0;
     private GreenfootImage frames[] = new GreenfootImage[6];
+    
+    /**
+     * This constructor sets the frame of the Donkey_Kong array to 
+     * one of the existing pictures. Either DonkeyKongFrame1, DonkeyKongFrame2, etc...
+     * This helps to create the feeling of Donkey_Kong having a mind of his own.
+     *  That is because his movemnet is randomized into three different possible animations.
+     * 
+     * @param There are no parameters
+     * @return Nothing is returned
+     */
     public Donkey_Kong()
     {
         frames [0] = new GreenfootImage("DonkeyKongFrame1.png");
@@ -24,8 +28,13 @@ public class Donkey_Kong extends Actor
         setImage(image);
     }
     /**
-     * Act - do whatever the OilBucket wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
+     * Act - is responsible with the delay that the six pictures go off at.
+     * When animateCounter is zero the animations are initialized if the randomized 
+     * number generator is matching with the requirements. This method is called 
+     * whenever the 'Act' or 'Run' button gets pressed in the environment.
+
+     * @param There are no parameters
+     * @return Nothing is returned
      */
     public void act() 
     {
@@ -52,6 +61,15 @@ public class Donkey_Kong extends Actor
             } 
         }    
     }
+    
+    /**
+     * Animate - is the method that alternates frames from 1 to 4. This helpsto add a animation
+     * effect to the game. When animateCounter is zero this method is initilized.
+     * This method is called whenever the 'Act' or 'Run' button gets pressed in the environment.
+     * 
+     * @param There are no parameters
+     * @return Nothing is returned
+     */
     private void animate1()
     {
         if(frame == 1)
@@ -76,6 +94,15 @@ public class Donkey_Kong extends Actor
             frame = 1;
         }
     }
+    
+    /**
+     * Animate - is the method that alternates frames from 1 to 4. This helpsto add a animation
+     * effect to the game. When animateCounter is zero this method is initilized.
+     * This method is called whenever the 'Act' or 'Run' button gets pressed in the environment.
+     * 
+     * @param There are no parameters
+     * @return Nothing is returned
+     */
     private void animate2()
     {
         if(frame == 1)
@@ -99,6 +126,14 @@ public class Donkey_Kong extends Actor
             frame = 1;
         }
     }
+    /**
+     * Animate - is the method that alternates frames from 1 to 1. This helpsto add a animation
+     * effect to the rest of the game. When animateCounter is zero this method is initilized.
+     * This method is called whenever the 'Act' or 'Run' button gets pressed in the environment.
+     * 
+     * @param There are no parameters
+     * @return Nothing is returned
+     */
     private void animate3()
     {
         if(frame == 1)
@@ -108,10 +143,29 @@ public class Donkey_Kong extends Actor
             frame = 1;
         }   
     }
+    
+    /**
+     * addBarrels - adds the BarrelsSpinning object to the world at the location
+     * of Donkey Kong. This method is initilized whenever the frame is on 3. This 
+     * helps to give the game a well timed placement of objects.
+     * 
+     * 
+     * @param There are no parameters
+     * @return Nothing is returned
+     */
     private void addBarrels()
     {
         ((PlayField) getWorld()).addBarrel();
     }
+    
+    /**
+     * addBarrelDown- adds the BarrelDown object to the world and slowy drops the object until 
+     * the object is at ground level. This is what is used to create DonkeyKong's iconic move
+     * the "barrel drop." This move has the chance of hitting mario while he his at the respectced x location.
+     * 
+     * @param There are no parameters
+     * @return Nothing is returned
+     */
     private void addBarrelDown()
     {
         ((PlayField) getWorld()).addBarrelsDown();

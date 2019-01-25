@@ -1,19 +1,24 @@
 #BlueJ class context
 comment0.target=BarrelsSpinning
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ BarrelsSpinning\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
 comment1.params=
 comment1.target=BarrelsSpinning()
+comment1.text=\r\n\ This\ constructor\ sets\ the\ frame\ of\ the\ BarrelsSpinning\ array\ to\ \r\n\ one\ of\ the\ existing\ pictures.\ Either\ BarrelSpinning1,\ BarrelSpinning2,\ \r\n\ or\ BarrelSpinning3.\ This\ helps\ to\ create\ the\ effect\ of\ rolling\ when\ \r\n\ the\ barrels\ are\ added\ to\ the\ world.\r\n\ \r\n\ @param\ There\ are\ no\ parameters\r\n\ @return\ Nothing\ is\ returned\r\n
 comment2.params=
 comment2.target=void\ act()
-comment2.text=\r\n\ Act\ -\ do\ whatever\ the\ OilBucket\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+comment2.text=\r\n\ Act\ -\ is\ responsible\ with\ the\ delay\ that\ the\ three\ pictures\ go\ off\ at.\r\n\ When\ animateCounter\ is\ zero\ the\ animate\ method\ is\ initilized.\ This\ method\ \r\n\ is\ called\ whenever\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n\ \r\n\ @param\ There\ are\ no\ parameters\r\n\ @return\ Nothing\ is\ returned\r\n
 comment3.params=
 comment3.target=void\ animate()
+comment3.text=\r\n\ Animate\ -\ is\ the\ method\ that\ alternates\ frames\ from\ frame\ 1\ to\ frame\ 3.\ This\ helps\r\n\ to\ add\ a\ animation\ effect\ to\ the\ game.\ When\ animateCounter\ is\ zero\ this\ method\ is\ initilized.\r\n\ This\ method\ is\ called\ whenever\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n\ \r\n\ @param\ There\ are\ no\ parameters\r\n\ @return\ Nothing\ is\ returned\r\n
 comment4.params=
 comment4.target=void\ moveRight()
+comment4.text=\r\n\ moveRight\ -\ is\ what\ is\ initilized\ after\ the\ barrel\ is\ spawned\ in.\r\n\ It\ moves\ the\ barrel\ to\ the\ right\ when\ Donkey\ kong\ firt\ picks\ up\ and\ \r\n\ puts\ down\ the\ barrel.\r\n\ \r\n\ @param\ There\ are\ no\ parameters\r\n\ @return\ Nothing\ is\ returned\r\n
 comment5.params=
 comment5.target=void\ checkFall()
+comment5.text=\r\n\ checkFall\ -\ checks\ to\ see\ if\ the\ object\ is\ intersecting\ with\ the\r\n\ metalBar\ class.\ If\ so,\ the\ obejct\ stops\ falling\ and\ starts\ to\ move\ \r\n\ to\ the\ right.\ If\ it\ is\ at\ the\ edge\ of\ the\ world,\ it\ is\ removed.\r\n\ Otherwise\ if\ it\ is\ not\ intersecting\ with\ the\ metal\ bar,\ it\ starts\r\n\ to\ fall\ down\ with\ the\ speed\ of\ 3.\r\n\ \r\n\ @param\ There\ are\ no\ parameters\r\n\ @return\ Nothing\ is\ returned\r\n
 comment6.params=ySpeed
 comment6.target=void\ fall(int)
+comment6.text=\r\n\ fall\ -\ sets\ the\ location\ of\ the\ BarrelsSpinning\ object\ to\ a\ (y)\ loation\ of\r\n\ vSpeed\ (vertical\ speed)\ which\ is\ set\ to\ 3.\ This\ method\ is\ used\ whenever\r\n\ the\ object\ has\ to\ fall.\r\n\ \r\n\ @param\ There\ are\ no\ parameters\r\n\ @return\ Nothing\ is\ returned\r\n
 comment7.params=
 comment7.target=void\ rightOrLeft()
+comment7.text=\r\n\ rightOrLeft-\ is\ what\ happens\ after\ the\ BarrelsSpinning\ objects\r\n\ reaches\ the\ end\ of\ the\ ramp.\ That\ is\ when\ it\ has\ to\ choose\ what\r\n\ direction\ to\ start\ rotating\ at.\ That\ is\ when\ this\ method\ is\ initilized.\r\n\ Everytime\ a\ BarrelsSpinning\ object\ comes\ in\ conatct\ with\ a\ TurnBox\ object\ it\r\n\ changes\ the\ direction\ of\ what\ the\ Barrels\ were\ spinning\ towards.\r\n\ \r\n\ @param\ There\ are\ no\ parameters\r\n\ @return\ Nothing\ is\ returned\r\n
 numComments=8

@@ -1,18 +1,20 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
-/**
- * Write a description of class Ladders here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
 public class Ladder extends Actor
 {
     private GreenfootImage ladders[] = new GreenfootImage[19];
+     
+    /**
+     * This constructor sets the picture of the 19 existing Ladders to the
+     * corresponding picture. This is what mario will be using to climb up when 
+     * is needed to.
+     * 
+     * @param imageNum is used to determine what ladder is set to be used when a intger from zero to 18 is chosen
+     * @return Nothing is returned
+     */
     public Ladder(int imageNum)
     {
         GreenfootImage image = new GreenfootImage("LadderUpTwo.png");
-        
         if( imageNum == 0 )
         {
             image = new GreenfootImage("Ladder1.png");
@@ -109,13 +111,5 @@ public class Ladder extends Actor
             image.scale(17, 95);
         }
         setImage(image);
-    }
-    /**
-     * Act - do whatever the Ladders wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
-    public void act() 
-    {
-        // Add your action code here.
-    }    
+    }  
 }

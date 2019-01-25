@@ -1,28 +1,20 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
-/**
- * Write a description of class WalkingStand here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
 public class MetalBar extends Actor
 {
-    private GreenfootImage MetalBars[] = new GreenfootImage[2];
+    
+    /**
+     * This constructor sets the picture of the MetalBar class to 
+     * a existing picture. This is what mario will be located on when the game
+     * is first initilized and also when Mario moves around.
+     * 
+     * @param There are no parameters
+     * @return Nothing is returned
+     */
     public MetalBar()
     {
-        MetalBars[0] = new GreenfootImage("DonkeyKongFloor.png");
-        MetalBars[1] = new GreenfootImage("DonkeyKongRamp.png");
-        GreenfootImage image = getImage();
+        GreenfootImage image = new GreenfootImage("DonkeyKongFloor.png");
         image.scale(32, 15);
         setImage(image);
-    }
-    /**
-     * Act - do whatever the WalkingStand wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
-    public void act() 
-    {
-        // Add your action code here.
-    }    
+    } 
 }

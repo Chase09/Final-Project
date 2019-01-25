@@ -1,9 +1,6 @@
 #BlueJ class context
 comment0.target=TurnBox5
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ TurnBox\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
 comment1.params=
 comment1.target=TurnBox5()
-comment2.params=
-comment2.target=void\ act()
-comment2.text=\r\n\ Act\ -\ do\ whatever\ the\ TurnBox\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
-numComments=3
+comment1.text=\r\n\ This\ is\ the\ constructor\ that\ sets\ the\ image\ of\ the\ TurnBox5\ to\ a\ black\ box\ that\ \r\n\ causes\ the\ BarrelsSpinning\ to\ rotate\ to\ the\ other\ direction.\r\n\ \r\n\ @param\ There\ are\ no\ parameters\r\n\ @return\ Nothing\ is\ returned\r\n
+numComments=2
